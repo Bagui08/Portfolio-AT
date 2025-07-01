@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="C:\Users\DELL\Documents\COURS ESETEC RIT1\PORTFOLIO MIB\logo AT.png" alt="AnonyTech">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav">
+    <a href="#accueil">Accueil</a>
+    <a href="#dev">Développement web & mobile</a>
+    <a href="#crypto">Crypto / Blockchain</a>
+    <a href="#cyber">Cybersécurité</a>
+    <a href="#transfo">Transformation digitale</a>
+    <a href="#ia">IA / Automatisation</a>
+  </nav>
+</header>
+
+<!--Début de la section Acceuil-->
+<section id="accueil" class="hero">
+  <h1>Bienvenue sur AnonyTech</h1>
+  <p>Créateur de solutions innovantes en web, mobile, blockchain, cybersécurité et IA.</p>
+  <a href="#dev" class="btn">Découvrir mes services</a>
+</section>
+
+<!--Début de la section développement Web & mobile -->
+
+<section id="dev">
+  <h2>Développement Web & Mobile</h2>
+  <p>Création de sites web responsives, applications mobiles hybrides ou natives selon vos besoins.</p>
+  <ul>
+    <li>HTML, CSS, JavaScript, PHP, MySQL</li>
+    <li>Frameworks : React, Laravel, Flutter</li>
+    <li>Projets : Sites e-commerce, portails web, apps Android</li>
+  </ul>
+</section>
+<!--Début de la section Intégration Crypto/Blockchain -->
+<section id="crypto">
+  <h2>Intégration Crypto / Blockchain</h2>
+  <p>Développement d'applications décentralisées et intégration de paiements en crypto-monnaie.</p>
+  <ul>
+    <li>Smart contracts avec Solidity</li>
+    <li>Web3.js, Metamask, NFT, WalletConnect</li>
+    <li>DApps sur Ethereum et Binance Smart Chain</li>
+  </ul>
+</section>
+<!--Début de la section Cybersécurité -->
+<section id="cyber">
+  <h2>Cybersécurité</h2>
+  <p>Audit, sécurisation et test d’intrusion pour protéger vos systèmes et données sensibles.</p>
+  <ul>
+    <li>Outils : Wireshark, Kali Linux, Burp Suite</li>
+    <li>Test de vulnérabilité : XSS, SQLi, CSRF</li>
+    <li>Conformité : OWASP, RGPD</li>
+  </ul>
+</section>
+<!--Début de la section Conseil en transformation digitale -->
+<section id="transfo">
+  <h2>Conseil en transformation digitale</h2>
+  <p>Accompagnement stratégique pour intégrer le numérique dans vos processus métiers.</p>
+  <ul>
+    <li>Digitalisation des services</li>
+    <li>ERP, CRM, automatisation de tâches</li>
+    <li>Formation à l’usage des outils digitaux</li>
+  </ul>
+</section>
+<!--Début de la section Intelligence artificielle/Automatisation -->
+<section id="ia">
+  <h2>Intelligence Artificielle / Automatisation</h2>
+  <p>Conception de solutions intelligentes pour automatiser et améliorer vos processus.</p>
+  <ul>
+    <li>Python, Scikit-learn, TensorFlow</li>
+    <li>Chatbots, systèmes de recommandation</li>
+    <li>Scraping et automatisation avec Selenium</li>
+  </ul>
+</section>
+
+<!-- Script du Menu Hamburger -->
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+
+  const navLinks = nav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>
